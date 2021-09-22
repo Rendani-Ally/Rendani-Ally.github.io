@@ -1,116 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<title>Blck ink</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-<!--==================================for the carousel=============================================-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	
-	<div class="size1 bg0 where1-parent">
-		<!-- Coutdown -->
-		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
-			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt4">Days</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt4">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt4">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt4">Seconds</span>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Form -->
-		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
-			<div class="wrap-pic1">
-				<img src="images/icons/logo.png" alt="blck ink logo">
-			</div>
-				<p class="m1-txt1 p-b-36">
-					Our website is <span class="m1-txt2">Coming Soon</span>, 
-					<a href="https://www.instagram.com/blck__ink" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
-					<i class="fa fa-instagram"></i>
-					</a> follow us for updates now!</p>  
-
-   
-      <div class="item active">
-        <img src="images/24.png" alt="blck ink feather" style="width:100%;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous">
+      <link href="css/styles.css" rel="stylesheet" /> 
+    <title>Blck Ink</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/blckink_logo.png" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#page-top"><img src="img/blckink_logo.png" alt="..." />Blck INK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars ms-1"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+          </div>
       </div>
-		</div>
-	</div>
+  </nav>
+     <!-- Masthead-->
+     <header class="masthead">
+      <div class="container">
+          <div class="masthead-subheading">Welcome To Our Studio!</div>
+          <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Help us, help you find the your best ink</a>
+      </div>
+  </header>
+    <!--Home page carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/pexels-cottonbro-4125672.jpg" class="d-block w-100" alt="tatoo ink pen">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pexels-pavel-danilyuk-6593541.jpg" class="d-block w-100" alt="tatoo birds design">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pexels-cottonbro-4125612.jpg" class="d-block w-100" alt="tatooing">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- Services-->
+  <section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h3 class="text-muted">Check out what we can offer you</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4 class="my-3" class="bg-light">Tattos</h4>
+                <p class="text-muted"> <img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/5f02f3146dc9fc87008d8d84_Tattoos.jpg" alt="..." /></p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">Piercing</h4>
+                <p class="text-muted"><img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/5ef20f6a95d33d786ab8db50_Piercing.jpg" alt="guy showcasing piercing" /></p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="my-3">Merchandise</h4>
+                <p class="text-muted"><img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/5f02f314c083b73b25a34169_Merchandise.jpg" alt="Woman wearing our merch" /></p>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-	
-
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 2019,
-			endtimeMonth: 9,
-			endtimeDate: 5,
-			endtimeHours: 23,
-			endtimeMinutes: 59,
-			endtimeSeconds: 59,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
+     <!-- Portfolio Grid-->
+     <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">Portfolio</h2>
+              <h3 class="section-subheading text-muted">Check out our best work</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <!-- Portfolio item 1-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                          <img class="img-fluid" src="http://www.houseofhollandtattoos.co.za/img/Armand%20pics/AP4-Small.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">Threads</div>
+                          <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <!-- Portfolio item 2-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                          <img class="img-fluid" src="http://www.houseofhollandtattoos.co.za/img/Armand%20pics/AP7-Small.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">The Explore</div>
+                          <div class="portfolio-caption-subheading text-muted">Colourful Graphic tattoos</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <!-- Portfolio item 3-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                          <img class="img-fluid" src="http://www.houseofhollandtattoos.co.za/img/Armand%20pics/AP10-Small.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">Body tattoo</div>
+                          <div class="portfolio-caption-subheading text-muted">Identity</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                  <!-- Portfolio item 4-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                          <img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/5ef1f4c6ed9bf455e220372e_07.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">Cover ups</div>
+                          <div class="portfolio-caption-subheading text-muted">Cover your regret</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                  <!-- Portfolio item 5-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                          <img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/60d877e66a8499cb87434500_IMG_20210217_230130_618-Mobi.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">Southwest</div>
+                          <div class="portfolio-caption-subheading text-muted">Hand shakes</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <!-- Portfolio item 6-->
+                  <div class="portfolio-item">
+                      <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                          <img class="img-fluid" src="https://assets.website-files.com/5ef118b23448a872f8eda25b/5ef1f4c97a17d7a673efc520_31.jpg" alt="..." />
+                      </a>
+                      <div class="portfolio-caption">
+                          <div class="portfolio-caption-heading">Body</div>
+                          <div class="portfolio-caption-subheading text-muted">Abstracts</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- About-->
+  <section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Blck Ink TRAP.</h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2014</h4>
+                        <h4 class="subheading">Our Humble Beginnings</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted"> Allydermic (Rendani Alidzlwi) started the studio in May of 2014 with minimal experience but a hell of a lot of determination.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" class="size:cover "src="img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>March 2016</h4>
+                        <h4 class="subheading">A studio is Born</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">we opened our very first power house after being freelencers for two years. 
+                      This showed that we have a lot of 
+                      passion for what we do, we value our clients and always strive to do our best </p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>December 2020</h4>
+                        <h4 class="subheading">Transition to Full Service</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">6 years later and it is one of the top Tattoo Studios in Town. and now have two branches in Soweto</p></div>
+                </div>
+            </li>  
+        </ul>
+    </div>
+</section>
+<!-- Team-->
+  <!-- Team-->
+  <section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase" >Our Amazing Team</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/GCXG7008.JPG" alt="..." />
+                    <h4>Allydermic</h4>
+                    <p class="text-muted">Founder, Director and Artist</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/Screenshot_20210921-231041_Instagram.png" alt="..." />
+                    <h4>Mudau</h4>
+                    <p class="text-muted">Artist</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/Screenshot_20210921-230905_Instagram.png" alt="..." />
+                    <h4>Sadiki</h4>
+                    <p class="text-muted">Artist</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">“My body is my journal, and my tattoos are my story.”
+              ― Johnny Depp.</p></div>
+        </div>
+    </div>
+</section>
+   <!-- Contact-->
+   <section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Book an Appointment.</h3>
+        </div>
+        <form id="contactForm">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- Name input-->
+                        <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Email address input-->
+                        <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <!-- Phone number input-->
+                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <!-- Message input-->
+                        <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Send Message</button></div>
+        </form>
+    </div>
+</section>
+  <!-- Footer-->
+  <footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Blck ink  2021 - All right reserved</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+     crossorigin="anonymous"></script>
+  </body>
 </html>
